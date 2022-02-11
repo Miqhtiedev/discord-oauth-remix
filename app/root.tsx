@@ -3,7 +3,7 @@ import type { MetaFunction } from "remix";
 import styles from "./styles/generated.css";
 
 export const meta: MetaFunction = () => {
-  return { title: "Remix Template" };
+  return { title: "Remix Discord Template" };
 };
 
 export function links() {
