@@ -9,8 +9,6 @@ export default async function (code: string): Promise<Response> {
       .then((token) => {
         getDiscordUser(token.access_token)
           .then(async (user) => {
-            console.log(token.expires);
-
             database.user
               .upsert({
                 create: {
